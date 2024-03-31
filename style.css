@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    background-color:black;
+    width: 75mm;
+    height: 69mm;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+    align-items: center;
+    margin: 10mm;
+    padding: 1mm 0;
+    border-radius: 2mm;
+}
+
+.hole {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: none;
+}
+
+.container:hover {
+    cursor: pointer;
+    
+}
+
+.odd {
+    justify-self: end;
+}
+
+.even {
+    justify-self: start;
+}
+
+.even.first {
+    grid-column: 2/3;
+}
+
+.yellow {
+    background-color: yellow;
+}
